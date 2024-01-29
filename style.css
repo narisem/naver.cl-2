@@ -1,0 +1,483 @@
+html,body,form{
+    font-size: 10.5px;
+    line-height: 10.5px;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+}
+
+:root {
+    --color_title: #080808;
+    --color_title_rgb: 8,8,8;
+    --color_body: #101010;
+    --color_body_rgb: 16,16,16;
+    --color_caption1: #404040;
+    --color_caption1_rgb: 64,64,64;
+    --color_caption2: #606060;
+    --color_caption2_rgb: 96,96,96;
+    --color_search: #000;
+    --color_search_rgb: 0,0,0;
+    --color_border_out: #e3e5e8;
+    --color_border_out_rgb: 227,229,232;
+    --color_border_in: #ebebeb;
+    --color_border_in_rgb: 235,235,235;
+    --color_border_in_divider: #ebebeb;
+    --color_border_in_divider_rgb: 235,235,235;
+    --color_border_in_exception: #ebebeb;
+    --color_border_in_exception_rgb: 235,235,235;
+    --color_button_border: #dadcdf;
+    --color_button_border_rgb: 218,220,223;
+    --color_dot_divider: #d3d5d7;
+    --color_dot_divider_rgb: 211,213,215;
+    --color_block_bg: #fff;
+    --color_block_bg_rgb: 255,255,255;
+    --color_board_bg: #f4f6fa;
+    --color_board_bg_rgb: 244,246,250;
+    --color_option_bg: #f5f7f8;
+    --color_option_bg_rgb: 245,247,248;
+    --color_login_bg: #fafbfb;
+    --color_login_bg_rgb: 250,251,251;
+    --color_menu_widget_bg: #fff;
+    --color_menu_widget_bg_rgb: 255,255,255;
+    --color_setting_bg: #fff;
+    --color_setting_bg_rgb: 255,255,255;
+    --color_button1_bg: #fff;
+    --color_button1_bg_rgb: 255,255,255;
+    --color_button2_bg: #fff;
+    --color_button2_bg_rgb: 255,255,255;
+    --color_news: #3a67ea;
+    --color_news_rgb: 58,103,234;
+    --color_news_econ_stay: #909aab;
+    --color_news_econ_stay_rgb: 144,154,171;
+    --color_news_econ_down: #4f67d6;
+    --color_news_econ_down_rgb: 79,103,214;
+    --color_live_news_price: #f4361e;
+    --color_live_news_price_rgb: 244,54,30;
+    --color_enter: #e538e2;
+    --color_enter_rgb: 229,56,226;
+    --color_enter_bg: #f2f1fb;
+    --color_enter_bg_rgb: 242,241,251;
+    --color_sports: #1f65ef;
+    --color_sports_rgb: 31,101,239;
+    --color_sports_bg: #f4f7fe;
+    --color_sports_bg_rgb: 244,247,254;
+    --color_econ: #008f76;
+    --color_econ_rgb: 0,143,118;
+    --color_calendar: #eb5b5b;
+    --color_calendar_rgb: 235,91,91;
+    --color_dic: #031f5f;
+    --color_dic_rgb: 3,31,95;
+}
+
+// #header {
+//  position: relative;
+//  text-align: left;
+//  text-align: center;
+//  height: 64px;
+
+//naver見本コード↓
+// z-index: 120;
+// position: relative;
+// height: 156px;
+// padding: 70px 0 42px;
+
+// }
+
+.wrap {
+    text-align: center;
+}
+
+.wrap-center {
+    width: 1280px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    // background-color: pink;
+}
+
+#header-hamburger {
+    position: absolute;
+    top: 18px;
+    left: -10px;
+    padding: 10px;
+    z-index: 0;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#header-hamburger:hover {
+    background-color: var(--color_option_bg);
+    border-radius: 50%;
+}
+
+#header-hamburger:hover > div {
+    position: relative;
+}
+
+
+#header-hamburger > div {
+    background-image: url(./image/sp_main.6519c842.png);
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 435px 414px;
+    background-position: -82px -329px;
+
+}
+
+#header-pay {
+    position: absolute;
+    top: 18px;
+    left: 43px;
+    padding: 7px;
+    z-index: 0;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#header-pay > div {
+    position: relative;
+    background-image: url(./image/sp_main.6519c842.png);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 435px 414px;
+    background-position: -295px -177px;
+}
+
+
+#header-pay:hover {
+    background-color: var(--color_option_bg);
+    border-radius: 50%;
+}
+
+#header-pay:hover > div {
+    position: relative;
+}
+
+// 반대쪽 
+
+#header-talk {
+    position: absolute;
+    top: 18px;
+    right: 40px;
+    width: 46px;
+    padding: 10px;
+    z-index: 0;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#header-talk:hover {
+    background-color: var(--color_option_bg);
+    border-radius: 50%;
+}
+
+#header-talk:hover > div {
+    position: relative;
+}
+
+
+#header-talk > div {
+    background-image: url(./image/sp_main.6519c842.png);
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 435px 414px;
+    background-position: -190px -329px;
+
+}
+
+#header-alert {
+    position: absolute;
+    top: 18px;
+    right: -10px;
+    padding: 10px;
+    z-index: 0;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#header-alert > div {
+    position: relative;
+    background-image: url(./image/sp_main.6519c842.png);
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 435px 414px;
+    background-position: -136px -329px
+}
+
+
+#header-alert:hover {
+    background-color: var(--color_option_bg);
+    border-radius: 50%;
+}
+
+#header-alert:hover > div {
+    position: relative;
+}
+
+/*---검색부분 시작--*/
+
+#header-search {
+    position: absolute;
+    height: 58px;
+    top: 51px;
+    left: 50%;
+    width: 706px;
+    border: 1px solid #03c75a;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+#search > form {
+    width: 706px;
+    height: 58px;
+    top: 51px;
+    border-radius: 33px;
+    border: 1px solid #03c75a;
+    position: relative;
+    left: 50%;
+    font-size: 2rem;
+    transform: translateX(-50%);
+    display: inline-flex;
+    margin-bottom: 40px
+}
+
+#search > form:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12) ;
+}
+
+#search-right {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    justify-content: flex-start;
+
+}
+
+#search-keyboard, #search-recent, #search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#search-keyboard::before {
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b96eea2.png);
+    background-size: 434px 416px;
+    background-position: -226px -255px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 14px;
+}
+
+#search-keyboard:hover::before {
+    filter: brightness(0.9);
+}
+#search-recent::before {
+    content: "";
+    display: block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b96eea2.png);
+    background-size: 434px 416px;
+    background-position: -318px -248px;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 6px;
+    filter: brightness(0.6);
+}
+
+
+#search-button::before {
+    content: "";
+    display: inline-block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b96eea2.png);
+    background-size: 434px 414px;
+    background-position: -295px -329px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+#search-button {
+    padding: 17px 27px 16px 10px;
+}
+
+input[type="text" i] {
+    writing-mode: horizontal-tb !important;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+
+#search-input {
+    width: 100%;
+    height: 58px;
+    position: relative;
+    padding: 17px 0;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+    align-items: center;
+    margin-left: 25px;
+    line-height: 24px;
+}
+
+#search-input::placeholder{
+    color: white;
+    width: 480px;
+}
+#search-input:focus::placeholder{
+    color: rgb(230, 230, 230);
+}
+
+#search > form a {
+    position: relative;
+    margin-left: 27px;
+}
+
+
+#search-svg {
+    display: inline-flex; 
+    // width: 68px;
+    // margin-right: 12px;
+    height: 58px;
+    // padding-left: 10px;
+    justify-content: center;  
+    align-items: center;
+}
+
+#search-svg svg {
+    width: 24px;
+    height: 24px;
+    fill: #03c75a;
+}
+
+#nav {
+    margin-top: 30px; /* 上部のスペースを追加 */
+}
+
+#nav > ul  {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a div {
+    width: 44px;
+    height: 44px;
+    margin: auto 0;
+    position: relative;
+}
+
+#nav a div::after {
+    position: relative;
+    z-index: 1;
+    content: '';
+    display: inline-block;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
+    background-size: 434px 416px;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
+
+#nav a:visited {
+    color: #000;
+}
+
+#nav li {
+    width: 64px;
+    margin-left: 4px;
+}
+
+
+#nav li:nth-of-type(1) {
+    margin-left: 0;
+}
+
+#nav li a div::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background-image: url(https://pm.pstatic.net/resources/asset/sp_main.2b26eb67.png);
+    background-size: 434px 416px;
+    background-position: 0px -128px;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+
+#nav li:nth-of-type(1) a div::after {
+    background-position: -250px -90px;
+}
+#nav li:nth-of-type(2) a div::after {
+    background-position: -250px 0px;
+}
+#nav li:nth-of-type(3) a div::after {
+    background-position:-201px -98px;
+}
+#nav li:nth-of-type(4) a div::after {
+    background-position: -90px -209px;
+}
+#nav li:nth-of-type(5) a div::after {
+    background-position: 0px -209px;
+}
+#nav li:nth-of-type(6) a div::after {
+    background-position: -180px -209px;
+}
+#nav li:nth-of-type(7) a div::after {
+    background-position: -45px -209px;
+}
+#nav li:nth-of-type(8) a div::after {
+    background-position: -201px 0px;
+}
+#nav li:nth-of-type(9) a div::after {
+    background-position: -225px -209px;
+}
+#nav li:nth-of-type(10) a div::after {
+    background-position: -250px -135px;
+}
+
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#main {
+ height:  12000px;  
+}
